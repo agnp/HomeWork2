@@ -1,5 +1,5 @@
 
-/* Define all sections */
+/* General */
 body {
     background: rgb(204, 228, 246);
     margin: 0;
@@ -9,14 +9,14 @@ body {
     text-align: left;
     display: grid;
     grid-gap: 10px;
-    
-    grid-template-areas:
+        grid-template-areas:
         "header"
         "hero"
         "body"
         "footer"
 }
 
+/* Describe headings */
 h3 {
     font-family: Helvetica, sans-serif;
     font-size: 1.2em;
@@ -26,7 +26,7 @@ h3 {
     margin-block-end: 0.2em;
 } 
 
-/* Header section */
+/* HEADER */
 header {
     background: rgb(73, 92, 178);
     color: rgb(36, 42, 81);
@@ -43,14 +43,7 @@ header .brand {
     grid-area: brand;
 }
 
-header .tools {
-    margin-top: 20px;
-    grid-area: tools;
-}
-
 header .nav {
-
-    margin-top: 20px;
     grid-area: nav;
 }
 
@@ -64,18 +57,16 @@ header ul li {
 	color: #fff;
     background: rgb(73, 92, 178);
 	float: left;
-	padding: 5px;
+	padding: 25px;
 	position: relative;
 	margin-right: 1px;
 	text-decoration: none;
 	transition-duration: 0.5s;
 }
 
-header ul li ul li
-{
+header ul li ul li {
     display: block;
 }
- 
 
 header ul li a {
 	color: #fff;
@@ -91,28 +82,26 @@ header li:focus-within a {
 	outline: none;
 }
 
-
 header .tools {
     grid-area: tools;
     align-items: center;
     text-align: center;
+    margin-top: 20px;
 }
 
-/* Hero section */
+/* HERO */
 .hero {
-
     padding: 10px;
     grid-area: hero;
-
 	justify-self: center;
     align-items: center;
     text-align: center;
     background: rgb(187, 175, 211);
-
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
     grid-template-areas:
+        "feature"       
         "action";
 }
 
@@ -124,16 +113,14 @@ header .tools {
 }
 
 .hero .feature {
-
     grid-area: feature;
 }
 
-/* Body section */
+/* BODY */
 main {
     background: rgb(187, 175, 211);
     padding: 10px;
     grid-area: body;
-
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -157,7 +144,7 @@ main .listing {
     grid-area: listing;
 }
 
-/* Footer section */
+/* FOOTER */
 footer {
     text-align: center;
     grid-area: footer;
@@ -175,7 +162,7 @@ footer {
     display: none;
 }
 
-/* Sidebar section */
+/* SIDEBAR */
 .sidebar {
     background: rgb(204, 228, 246);
     grid-area: sidebar;
@@ -188,7 +175,7 @@ footer {
     
 }
 
-/* Other */
+/* AD */
 .mobile-ad img {
     vertical-align: top;
     width: 100%;

@@ -57,7 +57,7 @@ header ul li {
 	color: #fff;
     background: rgb(73, 92, 178);
 	float: left;
-	padding: 25px;
+    padding: 10px;
 	position: relative;
 	margin-right: 1px;
 	text-decoration: none;
@@ -76,6 +76,9 @@ header ul li:hover,
 header ul li:focus-within {
     background: rgb(239, 199, 228);
 	cursor: pointer;
+    transform: scale(1.0);
+    box-shadow: 7px 10px 8px 1px rgba(0,0,0,0.2);
+    padding: 15px;
 }
 
 header li:focus-within a {
@@ -194,7 +197,7 @@ footer {
     opacity: 0.5;
 }
 
-/* Tablet friendly layout */
+/* TABLET LAYOUT */
 @media (min-width: 576px) {
     body {
         grid-template-rows: auto auto 1fr auto auto;
@@ -243,7 +246,7 @@ footer {
     }
 }
 
-/* Desktop friendly layout */
+/* DESKTOP LAYOUT */
 @media (min-width: 992px) {
     body {
         grid-template-columns: 1fr 350px;
@@ -254,8 +257,6 @@ footer {
             "body sidebar"
             "footer footer"
     }
-
-
 
     /* Change Hero Layout */
     .hero {
@@ -280,6 +281,3 @@ footer {
         display: block;
     }
 }
-
-
-
